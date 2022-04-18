@@ -1,0 +1,5 @@
+Scheme.txt
+/src/test/resources/
+
+# Project exclude paths
+/target/

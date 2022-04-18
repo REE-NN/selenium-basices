@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+    <test name="AllTests" parallel="false">
+        <classes>
+            <class name="testCases.LoginTest"/>
+            <class name="testCases.LetterCreateTest"/>
+            <class name="testCases.LetterDeleteTest">
+                <parameter name="draft_Subject" value="delete"/>
+            </class>
+            <class name="testCases.LetterSendTest">
+                <parameter name="sentLetter_Subject" value="send"/>
+            </class>
+            <class name="testCases.LogoutTest"/>
+        </classes>
+    </test>
+</suite>
