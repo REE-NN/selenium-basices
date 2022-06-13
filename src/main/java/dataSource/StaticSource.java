@@ -1,7 +1,7 @@
 package dataSource;
 
 public class StaticSource {
-
+    public static final long WAIT_TIMEOUT_SECONDS_10 = 10;
     public static final long WAIT_TIMEOUT_SECONDS_20 = 20;
     public static final long WAIT_TIMEOUT_SECONDS_30 = 30;
     public static final long WAIT_TIMEOUT_SECONDS_90 = 90;

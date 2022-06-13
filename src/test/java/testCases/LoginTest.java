@@ -12,7 +12,7 @@ import pages.UserMenu;
 import java.time.Duration;
 
 import static dataSource.DriverManager.driver;
-import static dataSource.StaticSource.WAIT_TIMEOUT_SECONDS_20;
+import static dataSource.StaticSource.WAIT_TIMEOUT_SECONDS_10;
 import static org.testng.Assert.assertEquals;
 
 public class LoginTest {
@@ -31,7 +31,7 @@ public class LoginTest {
         wrightLetter = new MailPageWrightLetter(driver);
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WAIT_TIMEOUT_SECONDS_20)); // Implicit Wait, неявное ожидание
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WAIT_TIMEOUT_SECONDS_10)); // Implicit Wait, неявное ожидание
         driver.get(ConfProperties.getProperty("startPage"));
     }
 

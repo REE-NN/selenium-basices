@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Extra logging related to initialization of Log4j.
  Set to debug or trace if log4j initialization is failing. -->
-<Configuration status="warn">
+<Configuration status="error">
     <Appenders>
         <!-- Console appender configuration -->
         <Console name="console" target="SYSTEM_OUT">
@@ -11,8 +11,8 @@
     </Appenders>
     <Loggers>
         <!-- Root logger referring to console appender -->
-        <Root level="debug" additivity="false">
-            <AppenderRef ref="console" level = "info"/>
+        <Root level="error" additivity="false">
+            <AppenderRef ref="console" level = "error"/>
 <!--            <AppenderRef ref="console" level = "debug"/>-->
         </Root>
     </Loggers>
